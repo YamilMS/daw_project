@@ -1,0 +1,28 @@
+
+.reactIcon{
+    font-size: 1.56px;
+ }
+#iconAll, #iconClothes, #iconAccesories, #iconElectronics, #iconSports, #iconOther, #iconAutomotive{
+   background-color: white;
+   border-color: lightgray;
+   padding:10px;
+   border-radius: 25%;
+}
+#filterProducts{
+    margin-top: 50px;
+}
+
+#iconAll:focus, #iconClothes:focus, #iconAccesories:focus, #iconElectronics:focus, #iconSports:focus, #iconAutomotive:focus, #iconOther:focus{
+    border-color:  #FFC600;
+}
+.iconsPointer button{
+    width:103px;
+}
+
+@media (max-width: 470px){
+
+   .reactIcon{
+    font-size: 15px;
+    padding: 0 !important;
+   }
+}

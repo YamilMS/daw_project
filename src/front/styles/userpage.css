@@ -1,0 +1,109 @@
+#userPage{
+  margin: 0;
+  padding: 0;
+}
+#pencil{
+    padding-top: 5px;
+}
+.title{
+    font-size: 17px;
+}
+.reviews{
+    font-size: 25px;
+}
+.container {
+    border: solid 1px black
+  }
+.circle {
+    transform: translateY(-25%);
+    width: 200px; 
+    height: 200px;  
+  }
+.circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+.right{
+    height: 300px;
+}
+.user-info{
+    height: 300px;
+  }
+.row{
+    margin:0;
+  }
+.userSection{
+    height: auto;
+    margin-top: 100px;
+
+  }
+.reviews-body {
+    background: #e4ebf4;
+    padding: 2rem;
+  }
+  h1 {
+    font-family: sans-serif;
+  }
+  
+
+
+  @media (max-width: 470px){
+    .circle{
+      width: 90px;
+      height: 90px;
+    }
+    #insight{
+      width: auto;
+      height: auto;    
+    }
+    .insight{
+      display: flex;
+      width: 100px !important;
+      flex-direction: column !important;
+      margin-top: 20px;
+      padding: 0 !important;
+    }
+    #insight p {
+      font-size: 15px;
+    }
+    .title{
+      font-size: 18px;
+      font-weight: bolder;
+      margin-top: 10px;
+    }
+    #userInfo{
+      height: auto;
+      margin-top: 19px;
+    }
+    #userInfo p {
+      font-size: 15px;
+    }
+    #userInfo i{
+      font-size: 15px;
+    }
+    #userInfo h3 {
+      font-size: 16px;
+      font-weight: bolder;
+    }
+    #imageProfile{
+      display: flex;
+      flex-direction: column !important;
+    }
+    #imageProfile button {
+      margin-top: 15px;
+      height: 35px;
+      width: 100%;
+    }
+    .email i,
+    .username i,
+    .location i {
+        display: block;
+    }
+    .location i {
+      margin-bottom: 10px; 
+    }
+  }
+
+  

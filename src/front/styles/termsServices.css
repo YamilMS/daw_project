@@ -1,0 +1,33 @@
+.termsServices{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.btn-terms{
+    background-color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+h1, h2{
+    margin: 1%;
+}
+
+@media (max-width: 800px){
+    .termsServices{
+        font-size: 0,75rem;
+    }
+    .btn-terms{
+        background-color: black;
+        border-radius: 15px;
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+}

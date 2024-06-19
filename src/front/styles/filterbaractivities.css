@@ -1,0 +1,33 @@
+#iconAll, #iconFamily, #iconAdventure, #iconRomantic, #iconGroup, #iconOther, #iconRelax{
+   background-color: white;
+   border-color: lightgray;
+   padding:10px;
+   border-radius: 25%;
+}
+.reactIcon{
+   font-size: 1.56px;
+}
+#iconAll:focus {
+    border-color:  #FFC600;
+}
+#iconFamily:focus {
+    border-color:  #FFC600;
+}
+#iconAdventure:focus {
+    border-color:  #FFC600;
+}
+#iconRomantic:focus {
+    border-color:  #FFC600;
+}
+#iconGroup:focus {
+    border-color:  #FFC600;
+}
+#iconRelax:focus {
+    border-color:  #FFC600;
+}
+#iconOther:focus {
+    border-color:  #FFC600;
+}
+.iconsPointer button{
+    width:103px;
+}

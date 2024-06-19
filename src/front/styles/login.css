@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#loginCard{
+    margin-top: 18vh;
+    margin-bottom: 18vh;
+}
+.general-container{
+    max-width: 100%;
+}
+.half-content{
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.half-content img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: filter 0.3s;
+}
+input{
+    height: 40px;
+    width: 220px;
+    border: none;
+    border-left: 1px solid black;
+}
+a{
+    text-decoration: none;
+}
+#createAcount{
+    cursor: pointer !important;
+}
+.fa-user,.fa-key,.fa-at{
+    font-size: 22px;
+    margin-left: 8px;
+}
+.input-board{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.general-container{
+    margin-bottom: 80px; 
+    margin-top: 80px;
+    margin-left: 15px; 
+    margin-right: 15px;
+}
+#login{
+    width: 500px;
+}
+
+@media (max-width: 470px){
+}
+
+.general-container{
+    max-width:100%;
+}
+
+
+
