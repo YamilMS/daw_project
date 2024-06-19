@@ -21,7 +21,7 @@ export const Footer = () => {
 					</li>
 				</ul>
 				<div class="b-example-divider my-1"></div>
-					<p class="text-center text-warning">&copy; 2023 4Geeks Academy</p>		
+					<p class="text-center text-warning">&copy; 2024, Yamil Melián Santos </p>		
 			</footer>
 		</div>
 	)

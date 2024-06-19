@@ -25,7 +25,7 @@ def handle_hello():
     populate_user();
     populate_reviews();
     response_body = {
-        "message": "Helloooo! This is 4Geeks Group 2 Final Project"
+        "message": "Script in action"
     }
     return jsonify(response_body), 200#
 
