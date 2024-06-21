@@ -35,7 +35,7 @@ const DinamicText = (props)=>{
                 <h4 id="text" className={`text-dark ${showName ? 'fade-in' : 'fade-out'}`}>{names[nameIndex]}</h4> 
             </div>
         </div>
-            <p className="mt-2 text-muted" ><small>Trust my word</small></p>     
+            <p className="mt-2 text-muted" ><small>Terra Sustainable Adventures</small></p>     
     </div>
   );
    

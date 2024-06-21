@@ -40,7 +40,7 @@ li{
     height: 31vh;
 }
 #imageContainerTrips {
-    background-image: url('https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://t4.ftcdn.net/jpg/06/90/63/05/240_F_690630501_QCzlSJZn2ELzDuCcIK7aQxyn87YpsQ2V.jpg');
     background-size: cover;
     background-position: center;
     height: 41vh;
@@ -53,7 +53,7 @@ li{
     height: 31vh;
 }
 #imageContainerNearme {
-    background-image: url('https://cdn.pixabay.com/photo/2019/06/14/15/34/friendship-4273865_1280.jpg');
+    background-image: url('https://t4.ftcdn.net/jpg/04/28/64/57/240_F_428645719_hZPFmcIkzz1NKcjSqC4ehVwAvsmqajI7.jpg');
     background-size: cover;
     background-position: center;
     height: 41vh;
@@ -67,7 +67,7 @@ li{
 }
     
 #imageContainerProducts{
-    background-image: url('https://cdn.pixabay.com/photo/2018/03/21/09/00/mall-3245949_1280.jpg');
+    background-image: url('https://t3.ftcdn.net/jpg/07/61/35/82/240_F_761358290_hAndQGdkAu87q7zW5aoHaeedSvz3qMAI.jpg');
     background-size: cover;
     background-position: center;
     height: 41vh;
@@ -79,6 +79,11 @@ li{
     position: relative;
     height: 31vh;
 }
+.home-navbar{
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
 #titleTrips{
     background-color: white;
     color: black;

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import ThemeSwitcher from "./themechanger";
 import {GiHamburgerMenu } from 'react-icons/gi';
+import file from "../../img/file.jpg"
 
 import "../../styles/navbar.css";
 
@@ -45,12 +46,12 @@ export const Navbar = () => {
 
   return (
       <nav 
-      className={`navbar navbar-expand-lg ${isHome ? 'home-navbar' : ''}`} 
-      style={isHome ? { background: 'url("https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_1280.jpg")', 
+      className={`navbar navbar-expand-lg ${isHome ? 'home-navbar' : 'home-navbar'}`} 
+      style={isHome ? { background: 'url("https://t3.ftcdn.net/jpg/05/71/35/96/240_F_571359675_uW3GDeWGeBZITejIbxt6OyuNGOclQkmT.jpg")', 
       color: 'white', minHeight: '400px', backgroundSize: 'cover', backgroundPosition: 'center'
       } : null}
       >
-          <div className="container-fluid">
+          <div className="home-navbar container-fluid">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
               <span className="navbar-toggler-icon" >
               <GiHamburgerMenu className="reactIcon" size="30px" />
@@ -59,25 +60,19 @@ export const Navbar = () => {
             <a className="navbar-brand" href="/"> 
             {isHome ? (
               <img
-                src="https://i.ibb.co/8m2mpN3/0d3b546942f94de196812ac8af0bf4d9-fotor-bg-remover-20230809143940.png"
+                src={file}
                 alt="0d3b546942f94de196812ac8af0bf4d9"
                 id="imageBrand"
               />
             ) : (
               <img
-                src="https://i.ibb.co/vjqHkfd/black-navbar-1.png" 
+              src={file}
                 alt="black-navbar-1"
                 id="imageBrandBNavbar"
               />)}
             </a>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul className="navbar-nav me-auto mt-0 mb-2 mb-lg-0" id="navbarContent">
-                  <li className="nav-item">
-                    <a className="nav-link active text-warning" aria-current="page" href="/">Home</a>
-                  </li> 
-                  <li className="nav-item text-warning" id="theme">
-                    <ThemeSwitcher/>
-                  </li>
                   <li className="nav-item dropdown" id="category-dropdown">
                     <button className="btn dropdown text-warning toggle" id="category" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Category
@@ -118,6 +113,9 @@ export const Navbar = () => {
                               Logout
                             </a>
                           </div>
+                          <li className="nav-item text-warning" id="theme">
+                            <ThemeSwitcher/>
+                          </li>
                           <div className="btn-group dropdown d-flex flex-wrap" id="favourites">
                             <button type="button" className="btn-navbar dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="dropdownMenuClickableInside" aria-expanded="false">
                                 Favourites <span className="p-1 text-center text-warning">{(store.favourite && store.favourite!=null && store.favourite!=undefined)? store.favourite.length:"0"}</span>

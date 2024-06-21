@@ -330,22 +330,24 @@ def create_comment():
         response_body= {
             "msg" : "description should be passed with request"
         }
-        return jsonify(response_body),400   
+        return jsonify(response_body),400
+         
 
-    message_validator = AIMessageValidator(os.getenv('OPENAPIKEY'))    
-    if message_validator.validate(data["description"]):         
-        new_comment= Comment(description=data["description"], review_id=data["review_id"], user_id=data["user_id"], author=data["author"], date=data["date"])
-        db.session.add(new_comment)
-        db.session.commit()
-        return jsonify(new_comment.serialize()), 200
-            
-    new_comment= InappropriateComment(description=data["description"], review_id=data["review_id"], user_id=data["user_id"], author=data["author"], date=data["date"])
+    #message_validator = AIMessageValidator(os.getenv('OPENAPIKEY'))    
+    #if not message_validator.validate(data["description"]):     
+    #    new_comment= InappropriateComment(description=data["description"], review_id=data["review_id"], user_id=data["user_id"], author=data["author"], date=data["date"])
+    #    db.session.add(new_comment)
+    #    db.session.commit()
+    #    response_body = {
+    #       "msg": "Comment rejected due to inappropriateness"
+    #   }
+    #    return jsonify(response_body),400
+    
+    new_comment= Comment(description=data["description"], review_id=data["review_id"], user_id=data["user_id"], author=data["author"], date=data["date"])
     db.session.add(new_comment)
     db.session.commit()
-    response_body = {
-        "msg": "Comment rejected due to inappropriateness"
-    }
-    return jsonify(response_body),400
+    return jsonify(new_comment.serialize()), 200  
+
 
 @api.route('/comment/<int:id>',methods=['DELETE'])
 @jwt_required()

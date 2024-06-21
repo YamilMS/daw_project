@@ -10,12 +10,15 @@ export const Privacy_policy = () =>{
     return (
 
 <div className="privacy_policy">
-<h1>TrustMyWords Privacy Policy</h1>
+<h1>Terra Sustainable Adventures 
+ Privacy Policy</h1>
   <p>Last updated: 10/08/2023</p>
 
   <h2>Introduction</h2>
   <p>
-    Welcome to the TrustMyWords Privacy Policy! At TrustMyWords, we take your privacy seriously and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and disclose your personal information when you visit our website or use our services. By using our services, you agree to the practices described in this Privacy Policy.
+    Welcome to the Terra Sustainable Adventures 
+ Privacy Policy! At Terra Sustainable Adventures 
+, we take your privacy seriously and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and disclose your personal information when you visit our website or use our services. By using our services, you agree to the practices described in this Privacy Policy.
   </p>
 
   <h2>Agreement and Changes</h2>
@@ -159,7 +162,7 @@ export const Privacy_policy = () =>{
     If you have any questions, concerns, or requests regarding this Privacy Policy, or if you wish to exercise any of your rights, please contact us using the information below:
   </p>
   <ul>
-    <li>Email: privacy@trustmywords.com</li>
+    <li>Email: privacy@tsa.com</li>
     <li>Address: 1234 Privacy Lane, Confidential City, 56789</li>
   </ul>
 
